@@ -1,0 +1,13 @@
+- hosts: localhost
+  tasks:
+    - include_vars: "/code/security_udev/secret.yml" 
+    - mail:
+       body: "this is mail from utkarsh"
+       from: "15uec065@lnmiit.ac.in"
+       username: 15uec065@lnmiit.ac.in
+       password: "{{ password }}"
+       subject: "test script"
+       to: "utkarsh.pandit8@gmail.com"
+       host: smtp.gmail.com
+       port: 587
+       attach: "/code/security_udev/intruder.tar"
