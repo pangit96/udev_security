@@ -1,1 +1,0 @@
-***write password of secret.yml file in this file***
